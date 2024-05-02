@@ -9,12 +9,15 @@ import {
   ListItem,
   ListItemText,
   Typography,
+  Link,
 } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
 import axios from "axios";
-import rightImage from "../../img/logo.png";
-import bannerImage from "../../img/banner.jpeg";
-import leftImage from "../../img/stateLogo.png";
+import rightImage from "./logo.png";
+import bannerImage from "./banner.jpeg";
+import leftImage from "./stateLogo.png";
+//import {Link} from 'react-router-dom';
+
 
 const styles = (theme) => ({
   root: {
@@ -129,20 +132,15 @@ class Header extends React.Component {
 
           <div style={{ width: "70%", float: "right", marginRight: "10%" }}>
             <div id="links">
-              <p id="emplogin">
-                <a href="/employee/user/login">Employee Login </a>
+              <p id="servicelist">
+                <a href="/servicelist">List of Services</a>
               </p>
             </div>
             <img src={rightImage} alt="..." id="rightimg" style={{}} />
           </div>
-        </div>
-        <div id="bannerimage">
-          <img
-            src={bannerImage}
-            alt="..."
-            style={{ maxWidth: "100%", maxHeight: "100%", width: "inherit" }}/>
-        </div>
-      </div>
+    
+    </div>
+    </div>
     );
   }
 }
